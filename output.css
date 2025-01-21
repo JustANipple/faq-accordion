@@ -644,10 +644,6 @@ video {
   row-gap: 24px;
 }
 
-.gap-y-\[24x\] {
-  row-gap: 24x;
-}
-
 .rounded-\[8px\] {
   border-radius: 8px;
 }
@@ -756,28 +752,9 @@ video {
   cursor: pointer;
 }
 
-.hover\:text-e_grayishPurple:hover {
-  --tw-text-opacity: 1;
-  color: rgb(140 105 145 / var(--tw-text-opacity, 1));
-}
-
 .hover\:text-e_activePurple:hover {
   --tw-text-opacity: 1;
   color: rgb(173 40 235 / var(--tw-text-opacity, 1));
-}
-
-.hover\:transition-all:hover {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.hover\:delay-100:hover {
-  transition-delay: 100ms;
-}
-
-.hover\:ease-in-out:hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 640px) {
@@ -794,8 +771,28 @@ video {
     max-width: 600px;
   }
 
+  .sm\:gap-\[0px\] {
+    gap: 0px;
+  }
+
   .sm\:gap-\[24px\] {
     gap: 24px;
+  }
+
+  .sm\:gap-\[20px\] {
+    gap: 20px;
+  }
+
+  .sm\:gap-\[21px\] {
+    gap: 21px;
+  }
+
+  .sm\:gap-\[213px\] {
+    gap: 213px;
+  }
+
+  .sm\:gap-\[23px\] {
+    gap: 23px;
   }
 
   .sm\:rounded-\[16px\] {
