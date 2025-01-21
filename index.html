@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" class="min-h-[100vh]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="output.css" />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body
+    class="grid min-h-[100vh] place-items-center justify-center bg-e_lightPink font-['WorkSans']"
+  >
+    <div
+      aria-hidden="true"
+      class="absolute left-0 top-[-1px] h-[232px] w-[100vw] bg-e_patternMobile bg-cover bg-no-repeat sm:h-[320px] sm:bg-e_patternDesktop"
+    ></div>
+    <main
+      class="shadow-e_md z-10 m-[24px] grid max-w-fit rounded-[8px] bg-e_white px-[24px] py-[18px] sm:max-w-[600px] sm:rounded-[16px] sm:px-[40px] sm:pt-[30px]"
+    >
+      <div class="flex items-center gap-[24px]">
+        <img
+          src="assets/images/icon-star.svg"
+          alt="purple star"
+          class="w-[24px] sm:w-fit"
+        />
+        <h1 class="text-[32px] font-e_bold text-e_darkPurple sm:text-[56px]">
+          FAQs
+        </h1>
+      </div>
+      <div
+        class="grid gap-y-[24px] border-b border-e_lightPink py-[20px] sm:py-[24px]"
+      >
+        <div class="flex items-center justify-between gap-[32px] sm:gap-[24px]">
+          <p
+            class="hover:text-e_activePurple h-fit font-e_medium leading-[1.2rem] text-e_darkPurple hover:cursor-pointer sm:text-[18px]"
+            onclick="toggleAnswer(this)"
+          >
+            What is Frontend Mentor, and how will it help me?
+          </p>
+          <button onclick="toggleAnswer(this)">
+            <img
+              src="assets/images/icon-minus.svg"
+              alt="plus icon"
+              class="min-w-[30px]"
+            />
+          </button>
+        </div>
+        <p class="text-[14px] text-e_grayishPurple sm:text-[16px]" id="answer">
+          Frontend Mentor offers realistic coding challenges to help developers
+          improve their frontend coding skills with projects in HTML, CSS, and
+          JavaScript. It's suitable for all levels and ideal for portfolio
+          building.
+        </p>
+      </div>
+      <div
+        class="grid gap-y-[24px] border-b border-e_lightPink py-[20px] sm:py-[24px]"
+      >
+        <div class="flex items-center justify-between gap-[32px] sm:gap-[24px]">
+          <p
+            class="hover:text-e_activePurple h-fit font-e_medium leading-[1.2rem] text-e_darkPurple hover:cursor-pointer sm:text-[18px]"
+            onclick="toggleAnswer(this)"
+          >
+            Is Frontend Mentor free?
+          </p>
+          <button onclick="toggleAnswer(this)">
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="plus icon"
+              class="min-w-[30px]"
+            />
+          </button>
+        </div>
+        <p
+          class="hidden text-[14px] text-e_grayishPurple sm:text-[16px]"
+          id="answer"
+        >
+          Yes, Frontend Mentor offers both free and premium coding challenges,
+          with the free option providing access to a range of projects suitable
+          for all skill levels.
+        </p>
+      </div>
+      <div
+        class="grid gap-y-[24px] border-b border-e_lightPink py-[20px] sm:py-[24px]"
+      >
+        <div class="flex items-center justify-between gap-[32px] sm:gap-[24px]">
+          <p
+            class="hover:text-e_activePurple h-fit font-e_medium leading-[1.2rem] text-e_darkPurple hover:cursor-pointer sm:text-[18px]"
+            onclick="toggleAnswer(this)"
+          >
+            Can I use Frontend Mentor projects in my portfolio?
+          </p>
+          <button onclick="toggleAnswer(this)">
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="plus icon"
+              class="min-w-[30px]"
+            />
+          </button>
+        </div>
+        <p
+          class="hidden text-[14px] text-e_grayishPurple sm:text-[16px]"
+          id="answer"
+        >
+          Yes, you can use projects completed on Frontend Mentor in your
+          portfolio. It's an excellent way to showcase your skills to potential
+          employers!
+        </p>
+      </div>
+      <div class="grid gap-y-[24px] pb-[8px] pt-[20px] sm:py-[24px]">
+        <div class="flex items-center justify-between gap-[32px] sm:gap-[24px]">
+          <p
+            class="hover:text-e_activePurple h-fit font-e_medium leading-[1.2rem] text-e_darkPurple hover:cursor-pointer sm:text-[18px]"
+            onclick="toggleAnswer(this)"
+          >
+            How can I get help if I'm stuck on a challenge?
+          </p>
+          <button onclick="toggleAnswer(this)">
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="plus icon"
+              class="min-w-[30px]"
+            />
+          </button>
+        </div>
+        <p
+          class="hidden text-[14px] text-e_grayishPurple sm:text-[16px]"
+          id="answer"
+        >
+          The best place to get help is inside Frontend Mentor's Discord
+          community. There's a help channel where you can ask questions and seek
+          support from other community members.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
